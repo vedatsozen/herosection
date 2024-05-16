@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    font-family: "Reddit Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    font-style: normal;
+  }
+
+body {
+    background-image: linear-gradient(201deg,#fa0000,#ff3300);
+    padding: 0px;
+    margin: auto 0;
+ 
+}
+
+:root {
+    --renk1:white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+    height:80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding: 5px;
+    
+}
+
+nav > ul {
+    margin: auto;
+    padding:0px;
+    list-style:none;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    width: fit-content;
+    gap:30px;
+    border:2px solid var(--renk1);
+    padding: 15px;
+    border-radius: 15px;
+
+
+}
+
+nav > ul > li {
+    display: inline-block;
+    margin: auto;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin: auto;
+    color: var(--renk1);
+}
+
+nav > ul > li > a:hover {
+    transform: translateY(-2px);
+    transition: 300ms ease;
+    display: block;
+}
+
+#buttons {
+    position:absolute;
+    top: 50%;
+    transform: translate(-10%,-50%);
+    right:5px;
+}
+
+button.btn {
+    background-color: #fa0000;
+    color:white;
+    padding: 5px 10px;
+    font-size: 20px;
+    letter-spacing:2px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+button.btn:hover {
+    background-color: white;
+    color: #fa0000;
+    transition: 300ms ease;
+    cursor: pointer;
+}
+
+button.btn:active {
+    transform: scale(0.9);
+}
+
+.section {
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section > .centereddiv {
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section > .centereddiv > h1 {
+    margin: auto;
+    font-weight:bolder;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+}
+
+.section > .centereddiv > h4 {
+    margin: auto;
+    margin-top: 10px;
+    font-size:20px;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+}
+
+div#buttons2 {
+    margin: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+img#logo {
+    position: absolute;
+    top:5px;
+    left:5px;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+    transform: rotate(-0deg);
+}
+
+img#logo:hover {
+    transition: 500ms ease-in-out;
+    transform: rotate(180deg);
+}
